@@ -7,15 +7,16 @@ using System.Text;
 namespace Data
 {
 
-   Public class DreasDataContext : DbContext
+     public class DreasDataContext : DbContext
     {
         public DbSet<User> Users { get; set; }
+       
         public DbSet<Address> Addresses { get; set; }
-        public DbSet<BaseModel> BaseModels { get; set; }
+        //public DbSet<BaseModel> BaseModels { get; set; }
         public DbSet<CompanyProfile> CompanyProfiles{get; set;}
         public DbSet<Contact> Contacts{get; set;}
         public DbSet<Enquiry> Enquiries{get; set;}
-        public DbSet<Feedback> Feedbacks{get; set;}
+        //public DbSet<Feedback> Feedbacks{get; set;}
         public DbSet<Log> Logs{get; set;}
         public DbSet<Notification> Notifications{get; set;}
         public DbSet<Payment> Payments{get; set;}
@@ -33,7 +34,7 @@ namespace Data
 
         public DreasDataContext(DbContextOptions options):base(options)            
           {
-            this.Database.EnsureCreated();
+            //this.Database.EnsureCreated();
           }
     }
 

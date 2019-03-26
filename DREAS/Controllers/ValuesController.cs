@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace DREAS.Controllers
-{
+{ //http://localhost:53025/api/values
     [Route("api/[controller]")]
     public class ValuesController : ControllerBase
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DREAS.Models
 {
-    public class Contact
+    public class Contact: BaseModel
     {
         [Required(ErrorMessage= "Email is required")]
         public string Email { get; set; }

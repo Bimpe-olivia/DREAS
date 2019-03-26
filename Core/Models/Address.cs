@@ -2,7 +2,7 @@
 
 namespace DREAS.Models
 {
-    public class Address
+    public class Address:BaseModel
     {
         [Required(ErrorMessage = "HouseNO is required")]
         public string HouseNo { get; set; }
